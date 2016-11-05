@@ -1,0 +1,73 @@
+'.text.html.vue':
+  'Vue element ui el-row':
+    'prefix': 'ebr',
+    'body': """
+    <el-row>
+        $1
+    </el-row>
+    """
+  'Vue element ui el-row with gutter':
+    'prefix': 'ebrg',
+    'body': """
+    <el-row :gutter="$1">
+        $2
+    </el-row>
+    """
+  'Vue element ui el-row with flex':
+    'prefix': 'ebrf',
+    'body': """
+    <el-row type="flex" justify="$1">
+        $2
+    </el-row>
+    """
+  'Vue element ui el-col with span':
+    'prefix': 'ebc',
+    'body': """
+    <el-col :span="$1">
+        $2
+    </el-col>
+    """
+  'Vue element ui el-col with span & offset':
+    'prefix': 'ebco',
+    'body': """
+    <el-col :span="$1" :offset="$2">
+        $3
+    </el-col>
+    """
+  'Vue element ui icon':
+    'prefix': 'ebi',
+    'body': """
+    <i class="el-icon-$1"></i>
+    """
+  'Vue element ui el-button':
+    'prefix': 'ebb',
+    'body': """
+    <el-button>$1</el-button>
+    """
+  'Vue element ui el-button with type':
+    'prefix': 'ebbt',
+    'body': """
+    <el-button type="$1">$2</el-button>
+    """
+  'Vue element ui el-button with disabled':
+    'prefix': 'ebbd',
+    'body': """
+    <el-button :disabled="true">$1</el-button>
+    """
+  'Vue element ui el-button with pain':
+    'prefix': 'ebbp',
+    'body': """
+    <el-button :plain="true" type="$1">$2</el-button>
+    """
+  'Vue element ui el-button with icon':
+    'prefix': 'ebbd',
+    'body': """
+    <el-button type="primary" icon="$1">$2</el-button>
+    """
+  'Vue element ui el-button-group':
+    'prefix': 'ebbg',
+    'body': """
+    <el-button-group>
+        $1
+    </el-button-group>
+    """

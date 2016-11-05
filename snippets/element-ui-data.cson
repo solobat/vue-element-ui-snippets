@@ -1,0 +1,36 @@
+'.text.html.vue':
+  'Vue element ui el-table':
+    'prefix': 'edt',
+    'body': """
+    <el-table
+        :data="$1"
+        style="width: 100%">
+        $2
+    </el-table>
+    """
+  'Vue element ui el-table':
+    'prefix': 'edtc',
+    'body': """
+    <el-table-column
+        prop="$1"
+        label="$2">
+    </el-table-column>
+    """
+  'Vue element ui el-tag':
+    'prefix': 'edtag',
+    'body': """
+    <el-tag>$1</el-tag>
+    """
+  'Vue element ui el-tag':
+    'prefix': 'edtagc',
+    'body': """
+    <el-tag
+      v-for="tag in $1"
+      :closable="true"
+      :key="tag"
+      :close-transition="false"
+      @close="$2(tag)"
+    >
+    {{tag.name}}
+    </el-tag>
+    """

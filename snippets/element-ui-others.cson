@@ -1,0 +1,14 @@
+'.text.html.vue':
+  'Vue element ui el-alert':
+    'prefix': 'eod',
+    'body': """
+    <el-dialog title="${1: 提示}" v-model="$2" size="${3: tiny}">
+
+    </el-dialog>
+    """
+  'Vue element ui el-card':
+    'prefix': 'eoc',
+    'body': """
+    <el-card class="box-card">
+    </el-card>
+    """

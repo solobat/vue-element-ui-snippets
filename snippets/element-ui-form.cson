@@ -1,0 +1,285 @@
+'.text.html.vue':
+  'Vue element ui el-radio':
+    'prefix': 'efr',
+    'body': """
+    <el-radio class="radio" v-model="$1" label="$2">$3</el-radio>
+    """
+  'Vue element ui el-radio with disabled':
+    'prefix': 'efrd',
+    'body': """
+    <el-radio disabled v-model="$1" label="$2">$3</el-radio>
+    """
+  'Vue element ui el-radio-group':
+    'prefix': 'efrg',
+    'body': """
+    <el-radio-group v-model="$1">
+        <el-radio label="$2">$3</el-radio>
+    </el-radio-group>
+    """
+  'Vue element ui el-radio-button':
+    'prefix': 'efrb',
+    'body': """
+    <el-radio-button label="$1">$2</el-radio-button>
+    """
+  'Vue element ui el-radio-button-group':
+    'prefix': 'efrbg',
+    'body': """
+    <el-radio-group v-model="$1">
+        <el-radio-button label="$2">$3</el-radio-button>
+    </el-radio-group>
+    """
+  'Vue element ui el-checkbox':
+    'prefix': 'efc',
+    'body': """
+    <el-checkbox v-model="$1" checked>$2</el-checkbox>
+    """
+  'Vue element ui el-checkbox with disabled':
+    'prefix': 'efcd',
+    'body': """
+    <el-checkbox v-model="$1" disabled>$2</el-checkbox>
+    """
+  'Vue element ui el-checkbox-group':
+    'prefix': 'efcg',
+    'body': """
+    <el-checkbox-group v-model="$1">
+        <el-checkbox label="$2"></el-checkbox>
+    </el-checkbox-group>
+    """
+  'Vue element ui el-checkbox-switch':
+    'prefix': 'efcs',
+    'body': """
+    <el-checkbox v-model="$1" true-label="$2" false-label="$3">{{$1}}</el-checkbox>
+    """
+  'Vue element ui el-input':
+    'prefix': 'efi',
+    'body': """
+    <el-input placeholder="$1" v-model="$2"></el-input>
+    """
+  'Vue element ui el-input with disabled':
+    'prefix': 'efid',
+    'body': """
+    <el-input placeholder="$1" v-model="$2" :disabled="true"></el-input>
+    """
+  'Vue element ui el-input with icon':
+    'prefix': 'efii',
+    'body': """
+    <el-input placeholder="$1" v-model="$2" icon="$3"></el-input>
+    """
+  'Vue element ui el-input textarea':
+    'prefix': 'efit',
+    'body': """
+    <el-input placeholder="$1" v-model="$2" type="textarea" autosize></el-input>
+    """
+  'Vue element ui el-input with prepend':
+    'prefix': 'efipp',
+    'body': """
+    <el-input placeholder="$1" v-model="$2">
+        <template slot="prepend">$3</template>
+    </el-input>
+    """
+  'Vue element ui el-input with append':
+    'prefix': 'efiap',
+    'body': """
+    <el-input placeholder="$1" v-model="$2">
+        <template slot="append">$3</template>
+    </el-input>
+    """
+  'Vue element ui el-input with autocomplete':
+    'prefix': 'efac',
+    'body': """
+    <el-autocomplete
+        class="$1-autocomplete"
+        v-model="$2"
+        :fetch-suggestions="$3"
+        custom-item="$4"
+        placeholder="$5"
+        @select="$6"
+    ></el-autocomplete>
+    """
+  'Vue element ui el-input-number':
+    'prefix': 'efin',
+    'body': """
+    <el-input-number v-model="$1" :min="$2" :max="$3"></el-input-number>
+    """
+  'Vue element ui el-input-number with step':
+    'prefix': 'efins',
+    'body': """
+    <el-input-number v-model="$1" :step="$2"></el-input-number>
+    """
+  'Vue element ui el-selector':
+    'prefix': 'efs',
+    'body': """
+    <el-select v-model="$1">
+        <el-option
+            v-for="item in $2"
+            :label="item.label"
+            :value="item.value">
+        </el-option>
+    </el-select>
+    """
+  'Vue element ui el-selector with disabled':
+    'prefix': 'efs',
+    'body': """
+    <el-select v-model="$1">
+        <el-option
+            v-for="item in $2"
+            :label="item.label"
+            :value="item.value"
+            :disabled="item.disabled>
+        </el-option>
+    </el-select>
+    """
+  'Vue element ui el-selector multiple':
+    'prefix': 'efsm',
+    'body': """
+    <el-select v-model="$1" multiple>
+        <el-option
+            v-for="item in $2"
+            :label="item.label"
+            :value="item.value">
+        </el-option>
+    </el-select>
+    """
+  'Vue element ui el-selector group':
+    'prefix': 'efsg',
+    'body': """
+    <el-select v-model="$1">
+        <el-option-group
+            v-for="group in $2"
+            :label="group.label">
+            <el-option
+                v-for="item in group.options"
+                :label="item.label"
+                :value="item.value">
+            </el-option>
+        </el-option-group>
+    </el-select>
+    """
+  'Vue element ui el-selector with filter':
+    'prefix': 'efsf',
+    'body': """
+    <el-select v-model="$1" filterable>
+        <el-option
+            v-for="item in $2"
+            :label="item.label"
+            :value="item.value">
+        </el-option>
+    </el-select>
+    """
+  'Vue element ui el-selector remote':
+    'prefix': 'efsr',
+    'body': """
+    <el-select
+        v-model="$1"
+        multiple
+        filterable
+        remote
+        placeholder="$2"
+        :remote-method="$3"
+        :loading="loading">
+        <el-option
+            v-for="item in $4"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+        </el-option>
+    </el-select>
+    """
+  'Vue element ui el-switch':
+    'prefix': 'efsw',
+    'body': """
+    <el-switch v-model="$1" on-text="$2" off-text="$3"></el-switch>
+    """
+  'Vue element ui el-switch with disabled':
+    'prefix': 'efswd',
+    'body': """
+    <el-switch v-model="$1" on-text="$2" off-text="$3" disabled></el-switch>
+    """
+  'Vue element ui el-slider':
+    'prefix': 'efsl',
+    'body': """
+    <el-slider v-model="$1"></el-slider>
+    """
+  'Vue element ui el-slider with step':
+    'prefix': 'efsls',
+    'body': """
+    <el-slider v-model="$1" :step="$2"></el-slider>
+    """
+  'Vue element ui el-slider with step and show stops':
+    'prefix': 'efslss',
+    'body': """
+    <el-slider v-model="$1" :step="$2" show-stops></el-slider>
+    """
+  'Vue element ui el-slider with show input':
+    'prefix': 'efsli',
+    'body': """
+    <el-slider v-model="$1" show-input></el-slider>
+    """
+  'Vue element ui el-time-select':
+    'prefix': 'efts',
+    'body': """
+    <el-time-select
+        v-model="$1"
+        :picker-options="$2"
+        placeholder="$3">
+    </el-time-select>
+    """
+  'Vue element ui el-time-select':
+    'prefix': 'eftsr',
+    'body': """
+    <el-time-select
+        v-model="$1"
+        :picker-options="{
+            selectableRange: '$2 - $3'
+        }"
+        placeholder="$4">
+    </el-time-select>
+    """
+  'Vue element ui el-date-picker':
+    'prefix': 'efdp',
+    'body': """
+    <el-date-picker
+        v-model="$1"
+        type="$2"
+        placeholder="$3"
+        :picker-options="$4">
+    </el-date-picker>
+    """
+  'Vue element ui el-upload':
+    'prefix': 'eful',
+    'body': """
+    <el-upload
+        action="$1"
+        :before-upload="$2">
+        <el-button size="small" type="primary">点击上传</el-button>
+        <div class="el-upload__tip" slot="tip">只能上传jpg/png文件，且不超过500kb</div>
+    </el-upload>
+    """
+  'Vue element ui el-form-item':
+    'prefix': 'effi',
+    'body': """
+    <el-form-item label="$1">
+        $2
+    </el-form-item>
+    """
+  'Vue element ui el-form-item with prop':
+    'prefix': 'effip',
+    'body': """
+    <el-form-item label="$1" prop="$2">
+        $3
+    </el-form-item>
+    """
+  'Vue element ui el-rate':
+    'prefix': 'efrt',
+    'body': """
+    <el-rate v-model="$1"></el-rate>
+    """
+  'Vue element ui el-rate':
+    'prefix': 'efrti',
+    'body': """
+    <el-rate
+        v-model="$1"
+        :icon-classes="$2"
+        void-icon-class="$3"
+        :colors="$4"></el-rate>
+    """

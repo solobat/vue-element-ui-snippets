@@ -1,0 +1,30 @@
+'.text.html.vue':
+  'Vue element ui el-alert':
+    'prefix': 'ena',
+    'body': """
+    <el-alert
+        title="$1"
+        type="${2: success}">
+    </el-alert>
+    """
+  'Vue element ui el-message':
+    'prefix': 'enm',
+    'body': """
+    this.$message('$1');
+    """
+  'Vue element ui el-message':
+    'prefix': 'enmt',
+    'body': """
+    this.$message({
+      message: '$1',
+      type: '${2: success}'
+    });
+    """
+  'Vue element ui el-notice':
+    'prefix': 'enn',
+    'body': """
+    this.$notify({
+      title: '$1',
+      message: '$2'
+    });
+    """
