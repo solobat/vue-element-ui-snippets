@@ -1,13 +1,13 @@
 {
   "name": "vue-element-ui-snippets",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Vue element ui snippets",
   "keywords": [
-      "vue",
-      "vue.js",
-      "components",
-      "snippets",
-      "element"
+    "vue",
+    "vue.js",
+    "components",
+    "snippets",
+    "element"
   ],
   "repository": "https://github.com/solobat/vue-element-ui-snippets",
   "license": "MIT",
@@ -17,6 +17,5 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
