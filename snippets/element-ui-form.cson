@@ -118,7 +118,7 @@
     </el-select>
     """
   'Vue element ui el-selector with disabled':
-    'prefix': 'efs',
+    'prefix': 'efsd',
     'body': """
     <el-select v-model="$1">
         <el-option
