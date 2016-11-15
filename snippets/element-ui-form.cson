@@ -125,7 +125,7 @@
             v-for="item in $2"
             :label="item.label"
             :value="item.value"
-            :disabled="item.disabled>
+            :disabled="item.disabled">
         </el-option>
     </el-select>
     """
