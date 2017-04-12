@@ -60,7 +60,7 @@
     <el-button :plain="true" type="$1">$2</el-button>
     """
   'Vue element ui el-button with icon':
-    'prefix': 'ebbd',
+    'prefix': 'ebbi',
     'body': """
     <el-button type="primary" icon="$1">$2</el-button>
     """

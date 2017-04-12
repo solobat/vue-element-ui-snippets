@@ -12,7 +12,7 @@ some snippets for [element-ui](http://element.eleme.io/#/component/installation)
 ### data
 + `edt: <el-table>`
 + `edtc: <el-table-column>`
-+ `edtag: <el-tag>`
++ `edtg: <el-tag>`
 
 ### form
 + `efr: <el-radio>`
@@ -50,4 +50,7 @@ some snippets for [element-ui](http://element.eleme.io/#/component/installation)
 ### others
 + `eod: <el-dialog>`
 + `eoc: <el-card>`
-+ ...TODO
++ `eop: <el-popover>`
++ `eot: <el-tooltip>`
++ `eocrl: <el-carousel>`
++ `eocp: <el-collapse>`

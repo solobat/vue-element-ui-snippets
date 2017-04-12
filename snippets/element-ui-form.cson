@@ -224,7 +224,7 @@
         placeholder="$3">
     </el-time-select>
     """
-  'Vue element ui el-time-select':
+  'Vue element ui el-time-select with range':
     'prefix': 'eftsr',
     'body': """
     <el-time-select

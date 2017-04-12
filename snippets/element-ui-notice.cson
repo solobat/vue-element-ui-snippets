@@ -4,7 +4,7 @@
     'body': """
     <el-alert
         title="$1"
-        type="${2: success}">
+        type="${2:success}">
     </el-alert>
     """
   'Vue element ui el-message':
@@ -12,12 +12,12 @@
     'body': """
     this.$message('$1');
     """
-  'Vue element ui el-message':
+  'Vue element ui el-message with type':
     'prefix': 'enmt',
     'body': """
     this.$message({
       message: '$1',
-      type: '${2: success}'
+      type: '${2:success}'
     });
     """
   'Vue element ui el-notice':

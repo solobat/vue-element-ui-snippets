@@ -8,7 +8,7 @@
         $2
     </el-table>
     """
-  'Vue element ui el-table':
+  'Vue element ui el-table-column':
     'prefix': 'edtc',
     'body': """
     <el-table-column
@@ -17,12 +17,12 @@
     </el-table-column>
     """
   'Vue element ui el-tag':
-    'prefix': 'edtag',
+    'prefix': 'edtg',
     'body': """
     <el-tag>$1</el-tag>
     """
-  'Vue element ui el-tag':
-    'prefix': 'edtagc',
+  'Vue element ui el-tag with closable':
+    'prefix': 'edtgc',
     'body': """
     <el-tag
       v-for="tag in $1"

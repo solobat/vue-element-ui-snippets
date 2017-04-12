@@ -2,9 +2,51 @@
   'Vue element ui el-alert':
     'prefix': 'eod',
     'body': """
-    <el-dialog title="${1: 提示}" v-model="$2" size="${3: tiny}">
+    <el-dialog title="${1:提示}" v-model="$2" size="${3:tiny}">
 
     </el-dialog>
+    """
+  'Vue element ui el-tooltip':
+    'prefix': 'eot',
+    'body': """
+    <el-tooltip class="item" effect="$1" content="$2" placement="$3">
+        $4
+    </el-tooltip>
+    """
+  'Vue element ui el-popover':
+    'prefix': 'eop',
+    'body': """
+    <el-popover
+      ref="$1"
+      placement="${2:top-start}"
+      title="${3:标题}"
+      width="${4:200}"
+      trigger="${5:hover}"
+      content="${6:这是一段内容,这是一段内容,这是一段内容,这是一段内容。}">
+    </el-popover>
+    """
+  'Vue element ui el-carousel':
+    'prefix': 'eocrl',
+    'body': """
+    <el-carousel height="150px">
+      <el-carousel-item v-for="item in $1">
+        $2
+      </el-carousel-item>
+    </el-carousel>
+    """
+  'Vue element ui el-collapse':
+    'prefix': 'eocp',
+    'body': """
+    <el-collapse v-model="$1" @change="${2:handleChange}">
+        $3
+    </el-collapse>
+    """
+  'Vue element ui el-collapse-item':
+    'prefix': 'eocpi',
+    'body': """
+    <el-collapse-item title="$1" name="$2">
+        $3
+    </el-collapse-item>
     """
   'Vue element ui el-card':
     'prefix': 'eoc',
