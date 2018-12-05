@@ -274,7 +274,7 @@
     'body': """
     <el-rate v-model="$1"></el-rate>
     """
-  'Vue element ui el-rate':
+  'Vue element ui el-rate with icon':
     'prefix': 'efrti',
     'body': """
     <el-rate
